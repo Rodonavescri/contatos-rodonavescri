@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contatos - Rodonaves</title>
+  <style>
+    :root {
+      --primary: #004aad;
+      --secondary: #f1f5f9;
+      --text: #1f2937;
+      --whatsapp: #25d366;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--secondary);
+      color: var(--text);
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    th {
+      background: #e2e8f0;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .whatsapp-button {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 6px 12px;
+      background-color: var(--whatsapp);
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      thead {
+        display: none;
+      }
+      td {
+        padding: 1rem;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Rodonaves - Contatos dos Colaboradores</header>
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>Setor</th>
+          <th>Nome</th>
+          <th>Contato</th>
+          <th>Horário</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Setor">Financeiro</td>
+          <td data-label="Nome">Luana</td>
+          <td data-label="Contato">
+            Tel: 48 3443-6158<br>
+            <a href="mailto:rte107@rte.com.br">rte107@rte.com.br</a><br>
+            <a class="whatsapp-button" href="https://wa.me/554834436158" target="_blank">WhatsApp</a>
+          </td>
+          <td data-label="Horário">08:00 - 12:00 e 13:15 - 18:00</td>
+        </tr>
+        <tr>
+          <td data-label="Setor">Atendimento/Rastreio</td>
+          <td data-label="Nome">Emily</td>
+          <td data-label="Contato">
+            Tel: 48 99835-0053<br>
+            <a href="mailto:atendimento.107@rte.com.br">atendimento.107@rte.com.br</a><br>
+            <a class="whatsapp-button" href="https://wa.me/5548998350053" target="_blank">WhatsApp</a>
+          </td>
+          <td data-label="Horário">08:00 - 12:00 e 13:15 - 18:00</td>
+        </tr>
+        <tr>
+          <td data-label="Setor">Cotação/Agendamento</td>
+          <td data-label="Nome">Marcelo</td>
+          <td data-label="Contato">
+            Tel: 48 3442-7391<br>
+            <a href="mailto:marcelo.leacina@rte.com.br">marcelo.leacina@rte.com.br</a><br>
+            <a class="whatsapp-button" href="https://wa.me/554834427391" target="_blank">WhatsApp</a>
+          </td>
+          <td data-label="Horário">08:00 - 12:00 e 13:15 - 18:00</td>
+        </tr>
+        <tr>
+          <td data-label="Setor">Coletas</td>
+          <td data-label="Nome">Emily/Felipe</td>
+          <td data-label="Contato">
+            Tel: 48 99133-7946<br>
+            <a href="mailto:expedicao.107@rte.com.br">expedicao.107@rte.com.br</a><br>
+            <a class="whatsapp-button" href="https://wa.me/5548991337946" target="_blank">WhatsApp</a>
+          </td>
+          <td data-label="Horário">08:00 - 12:00 e 13:15 - 21:00</td>
+        </tr>
+        <tr>
+          <td data-label="Setor">Coleta Reversa</td>
+          <td data-label="Nome">Claudio</td>
+          <td data-label="Contato">
+            Tel: 48 3442-1182<br>
+            <a href="mailto:coletas.107@rte.com.br">coletas.107@rte.com.br</a><br>
+            <a class="whatsapp-button" href="https://wa.me/554834421182" target="_blank">WhatsApp</a>
+          </td>
+          <td data-label="Horário">13:00 - 21:00</td>
+        </tr>
+        <tr>
+          <td data-label="Setor">Pesquisa/Avaria</td>
+          <td data-label="Nome">Rodrigo</td>
+          <td data-label="Contato">
+            Tel: 48 99655-1777<br>
+            <a href="mailto:pesquisa.107@rte.com.br">pesquisa.107@rte.com.br</a><br>
+            <a class="whatsapp-button" href="https://wa.me/5548996551777" target="_blank">WhatsApp</a>
+          </td>
+          <td data-label="Horário">08:00 - 12:00 e 13:15 - 18:00</td>
+        </tr>
+        <tr>
+          <td data-label="Setor">Faltas</td>
+          <td data-label="Nome">Pedro</td>
+          <td data-label="Contato">
+            Tel: 48 99655-1777<br>
+            <a href="mailto:pesquisa2.107@rte.com.br">pesquisa2.107@rte.com.br</a><br>
+            <a class="whatsapp-button" href="https://wa.me/5548996551777" target="_blank">WhatsApp</a>
+          </td>
+          <td data-label="Horário">08:00 - 12:00 e 13:15 - 18:00</td>
+        </tr>
+        <tr>
+          <td data-label="Setor">Pedência</td>
+          <td data-label="Nome">Milena</td>
+          <td data-label="Contato">
+            Tel: 48 3443-6158<br>
+            <a href="mailto:milena.zanette@rte.com.br">milena.zanette@rte.com.br</a><br>
+            <a class="whatsapp-button" href="https://wa.me/554834436158" target="_blank">WhatsApp</a>
+          </td>
+          <td data-label="Horário">08:00 - 12:00 e 13:15 - 18:00</td>
+        </tr>
+        <tr>
+          <td data-label="Setor">Comercial Interno</td>
+          <td data-label="Nome">Cássio</td>
+          <td data-label="Contato">
+            Tel: 48 99846-0126<br>
+            <a href="mailto:cassio.bristot@rte.com.br">cassio.bristot@rte.com.br</a><br>
+            <a class="whatsapp-button" href="https://wa.me/5548998460126" target="_blank">WhatsApp</a>
+          </td>
+          <td data-label="Horário">08:00 - 12:00 e 13:15 - 18:00</td>
+        </tr>
+        <tr>
+          <td data-label="Setor">Comercial Externo</td>
+          <td data-label="Nome">Fransie</td>
+          <td data-label="Contato">
+            Tel: 48 99940-0039<br>
+            <a href="mailto:fransie.pra@rte.com.br">fransie.pra@rte.com.br</a><br>
+            <a class="whatsapp-button" href="https://wa.me/5548999400039" target="_blank">WhatsApp</a>
+          </td>
+          <td data-label="Horário">08:00 - 12:00 e 13:15 - 18:00</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
